@@ -1,0 +1,106 @@
+dialog {
+    background: var(--dark-color);
+    text-align: center;
+    padding: 2rem 10vw;
+    border-radius: 20px;
+    border:0;
+}
+
+dialog h2, form label {
+    font-family: var(--font-poppi);
+}
+dialog fom {
+    width: 100%;
+}
+
+form .labels_required{
+    font-size: 1.6em;
+    color: var(--light-color);
+}
+
+form select {
+    width: 100%;
+    padding: 0.6rem 1.2rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    border: 0.18rem solid white;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    color: var(--light-color);
+
+}
+
+.select_container option{
+    color: var(--light-color);
+    background: var(--dark-color);
+}
+
+form .select_container select:focus{
+    border-color: var(--purple-color);
+    outline:none;
+}
+
+form .select_container:focus-within label {
+    color: var(--purple-color); /* Altere a cor do label quando o input estiver focado */
+}
+
+.select_container select option:focus{
+    background: var(--purple-color);
+
+}
+
+form .price_form{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    
+}
+
+.price_form p span{
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.price_form #price_total span {
+    color: var(--red-color);
+}
+
+.price_form #price_result span {
+    color: var(--green-color);
+}
+
+form .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 2rem;
+}
+
+.links .confirm_modal, .links .close_modal {
+    text-decoration: none;
+    align-items: center;
+    font-family: var(--font-poppi);
+    font-weight: bold;
+    border:0;
+    font-size: 1.6em;
+    padding: 0.8rem 1.8rem;
+    border-radius: 0.4rem;
+    color: var(--light-color);
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.links .confirm_modal:hover, .links .close_modal:hover{
+    padding: 1rem 2rem;
+}
+
+.links .close_modal{
+    background-color: var(--purple-color);
+}
+
+.links .confirm_modal{
+    background-color: var(--green-color);
+}
+

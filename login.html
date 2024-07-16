@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/fontes/fontes.css">
+    <link rel="stylesheet" href="styles/var.css">
+    <link rel="stylesheet" href="styles/form-content.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Olá, seja Bem vindo!</h1>
+        <form id="form" action="index.html" method="post" target="_self">
+            <div class="input_container">
+                <label for="username" class="labels_required">Username:</label><br>
+                <input type="text" id="username" name="username" class="inputs required">
+                <span class="span_required">Usuário inválido</span>
+            </div>
+            <div class="input_container">
+                <label for="pwd" class="labels_required">Password:</label><br>
+                <input type="password" id="pwd" name="pwd" class="inputs required">
+                <span class="span_required">Senha inválida</span>
+            </div>
+            <div class="links">
+                <input type="submit" title="Fazer login" value="Login">
+                <a href="register.html" title="Criar conta">Criar conta</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="scripts/valid-login.js"></script>
+</body>
+
+</html>

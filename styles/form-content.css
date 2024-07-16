@@ -1,0 +1,97 @@
+body{
+    background: linear-gradient(to right, var(--dark-base-color), var(--purple-color));
+    font-size: 62.5%;
+
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 10vw;
+    background: var(--dark-color);
+    z-index: 1000;
+    border-radius: 50px;
+}
+
+.container h1, .container label, .links a{
+    color: white;
+    font-family:  var(--font-poppi);
+}
+.container h1 {
+    font-size: 3.0em;
+}
+
+.container form{
+    width: 100%;
+}
+form .input_container, form .radio_container{
+    margin-top: 1rem;
+}
+
+.input_container label, .radio_container label{
+    font-size: 1.6em;
+}
+
+.container .inputs{
+    width: 100%;
+    padding:0.6rem 1.2rem;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    border: 0.18rem solid white;
+    border-radius: 0.4rem;
+    background-color:  transparent;
+    color: white;
+}
+
+
+.container form input:focus{
+    border-color: var(--purple-color);
+    outline:none;
+}
+
+form .input_container:focus-within label {
+    color: var(--purple-color); /* Altere a cor do label quando o input estiver focado */
+}
+
+form .span_required{
+    font-family: var(--font-poppi);
+    color: var(--red-color);
+    font-size: 1.4em;
+    display: none;
+    text-align: left;
+    margin: 0.2rem 0 0 0.1rem;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 2rem;
+}
+
+.links input{
+    padding: 0.8rem 1.8rem;
+    font-size: 1.6em;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    background-color: var(--green-color);
+    color: var(--light-color);
+    font-weight: bold;
+    font-family: var(--font-poppi);
+    border:none;
+}
+.links input:hover{
+    padding: 1rem 2rem;
+}
+
+.links a{
+    color: var(--purple-color);
+    font-size: 1.6em;
+}
+

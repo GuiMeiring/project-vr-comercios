@@ -1,0 +1,13 @@
+:root {
+    /* Colors */
+    --dark-base-color: #303030;
+    --dark-color:#383838;
+    --light-color: #f0f0f0;
+    --purple-color: #7E57C2;
+    --green-color: #006400;
+    --red-color: #e63636;
+
+    /* Fonts */
+    --font-orbitron: "Orbitron", sans-serif;
+    --font-poppi: "Poppi", sans-serif;
+}
